@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    producer:
+      retries: 0
+      buffer-memory: 33554432
+      batch-size: 16384
+      acks: 0
+      spring.kafka.producer.key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      spring.kafka.producer.value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    bootstrap-servers: 192.168.245.129:9092
